@@ -56,3 +56,22 @@ if (
 } else {
   darkToggle.checked = false;
 }
+
+// typewriter-effect
+var app = document.getElementById("typewriter-effect");
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+});
+
+typewriter
+  .typeString(" IT enthusiast")
+  .pauseFor(2500)
+  .deleteAll()
+  .typeString(" Frontend Developer")
+  .pauseFor(2500)
+  .deleteAll()
+  .typeString(" Backend Developer")
+  .pauseFor(2500)
+  .deleteAll()
+  .start();

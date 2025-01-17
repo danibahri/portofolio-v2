@@ -1,0 +1,58 @@
+#marquee-text {
+  animation: marquee1 60s linear infinite;
+}
+#marquee-text2 {
+  animation: marquee2 60s linear infinite;
+}
+
+@keyframes marquee1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#marquee {
+  animation: slide 60s linear infinite;
+}
+
+#marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+#marquee2 {
+  animation: slide2 60s linear infinite;
+}
+
+#marquee2:hover {
+  animation-play-state: paused;
+}
